@@ -1,0 +1,4 @@
+Cuando se consulta la ruta GET /reportes, el servidor devuelve la lista de reportes registrados hasta ese momento en formato JSON.
+Si aún no se ha enviado ningún reporte, la respuesta será un arreglo vacío: [].
+Después de usar POST /reportes, la respuesta muestra el nuevo reporte agregado y luego GET /reportes muestra la lista completa con el nuevo elemento.
+Esto demuestra que el array reportes funciona como almacenamiento temporal en memoria mientras el servidor sigue ejecutándose.
